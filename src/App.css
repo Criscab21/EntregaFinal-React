@@ -1,0 +1,27 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border: ridge 2px;
+}
+
+.navbar {
+  display: grid;  
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+  border: solid 1px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 30px;  
+}
+
+.cart {
+  display: flex;  
+  align-items: center;
+  margin-left: 20px;
+}
