@@ -1,9 +1,10 @@
 #root {
-  max-width: 1280px;
+  min-width: 90vw;  
+  min-height: 100vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  border: ridge 2px;
+  border: ridge 4px;
 }
 
 .navbar {
@@ -20,13 +21,3 @@
   grid-column-gap: 30px;  
 }
 
-.cart {
-  display: flex;  
-  align-items: center;
-  margin-left: 20px;
-}
-
-.itemListContainer .btnSaludar {
-  margin: 5px;
-  border: solid 1px;
-}

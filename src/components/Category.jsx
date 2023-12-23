@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Dropdown, DropdownItem, DropdownToggle, DropdownMenu} from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 function Category () {
@@ -16,11 +17,23 @@ function Category () {
                 <DropdownToggle caret>
                     Categorias
                 </DropdownToggle>
-
+                
                 <DropdownMenu header>
-                    <DropdownItem>Herramientas</DropdownItem>
-                    <DropdownItem>Computacion</DropdownItem>
-                    <DropdownItem>Cocina</DropdownItem>
+                    <Link to={'/catalogocompleto'}>
+                        <DropdownItem>Catalogo Completo</DropdownItem>
+                    </Link>                    
+                    <Link to={'/category/categoryA'}>
+                        <DropdownItem>categoryA</DropdownItem>
+                    </Link>
+                    <Link to={'/category/categoryB'}>
+                        <DropdownItem>categoryB</DropdownItem>
+                    </Link>
+                    <Link to={'/category/categoryC'}>
+                        <DropdownItem>categoryC</DropdownItem>
+                    </Link> 
+                    <Link to={'/category/categoryD'}>
+                        <DropdownItem>categoryD</DropdownItem>
+                    </Link>                     
                 </DropdownMenu>
             </Dropdown>
         </div>
