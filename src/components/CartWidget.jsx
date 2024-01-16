@@ -1,10 +1,13 @@
 import React from 'react';
 import {FaCartShopping } from "react-icons/fa6"
+import { Link } from 'react-router-dom';
 
 function CartWidget () {
     return (
         <div className="cart">
-            <FaCartShopping /> 5        
+            <Link to={'/cart'}>
+                <FaCartShopping />        
+            </Link>
         </div>
     )
 }

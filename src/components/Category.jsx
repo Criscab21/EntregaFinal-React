@@ -22,16 +22,16 @@ function Category () {
                     <Link to={'/catalogocompleto'}>
                         <DropdownItem>Catalogo Completo</DropdownItem>
                     </Link>                    
-                    <Link to={'/category/categoryA'}>
+                    <Link to={'/category/categoriaA'}>
                         <DropdownItem>categoryA</DropdownItem>
                     </Link>
-                    <Link to={'/category/categoryB'}>
+                    <Link to={'/category/categoriaB'}>
                         <DropdownItem>categoryB</DropdownItem>
                     </Link>
-                    <Link to={'/category/categoryC'}>
+                    <Link to={'/category/categoriaC'}>
                         <DropdownItem>categoryC</DropdownItem>
                     </Link> 
-                    <Link to={'/category/categoryD'}>
+                    <Link to={'/category/categoriaD'}>
                         <DropdownItem>categoryD</DropdownItem>
                     </Link>                     
                 </DropdownMenu>
