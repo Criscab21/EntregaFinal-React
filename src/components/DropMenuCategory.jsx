@@ -4,7 +4,7 @@ import {Dropdown, DropdownItem, DropdownToggle, DropdownMenu} from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 
-function Category () {
+function DropMenuCategory () {
     const [dropdown, setDropdown] = useState(false);
     const openCloseDropdown =() => {
         setDropdown(!dropdown);
@@ -40,5 +40,5 @@ function Category () {
     )
 }
 
-export default Category;
+export default DropMenuCategory;
 

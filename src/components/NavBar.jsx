@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import CartWidget from "./CartWidget";
-import Category from './Category';
 import { Link } from 'react-router-dom';
 import { ItemContext } from '../context/ItemProvider';
+import DropMenuCategory from './DropMenuCategory';
 
 
 const NavBar = () => {    
@@ -15,7 +15,7 @@ const NavBar = () => {
 
     return(
         <div className="navbar">
-            <Category/>
+            <DropMenuCategory/>
             <Link to={'/'}>
                 Home
             </Link>            

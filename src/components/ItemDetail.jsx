@@ -13,7 +13,7 @@ import { ButtonGroup } from "reactstrap";
 import { ItemContext } from "../context/ItemProvider";
 
 
-const ItemCard = ({product}) => {
+const ItemDetail = ({product}) => {
 
     const [cart, setCart] = useContext(ItemContext);    
     
@@ -76,4 +76,4 @@ const ItemCard = ({product}) => {
 
 }
 
-export default ItemCard;
+export default ItemDetail;

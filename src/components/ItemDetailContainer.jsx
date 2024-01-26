@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import data from "../data/productos.json"
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 import { Stack, HStack, VStack } from '@chakra-ui/react'
@@ -12,7 +11,7 @@ import { Box } from '@chakra-ui/react'
 import { ItemContext } from "../context/ItemProvider";
 import { collection, getDocs, getFirestore } from "firebase/firestore"
 
-const ItemCardDetail = () => {
+const ItemDetailContainer = () => {
     const [product, setProducts] = useState([]);
     const [productById, setProductById] = useState([]);
     const {id} = useParams();   
@@ -101,4 +100,4 @@ const ItemCardDetail = () => {
     
 }
 
-export default ItemCardDetail;
+export default ItemDetailContainer;
