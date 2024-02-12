@@ -20,6 +20,8 @@ Los productos estan todos en firebase, que se conecta directamente con la app pa
 
 Visualmente la app es pobre, pero esta hecha con chakra-ui.
 
+![Funcionamiento de la pagina](src/assets/videoGifReact.gif)
+
 
 
 

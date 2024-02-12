@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { ItemContext } from '../context/ItemProvider';
+import { ItemContext } from '../context/CartContext';
 import { CartCard } from './CartCard';
 import { Text } from '@chakra-ui/react';
 import { addDoc, getFirestore, collection } from 'firebase/firestore';
@@ -13,6 +13,7 @@ function Cart () {
   const [orderId, setOrderId] = useState(null);
   
   const db = getFirestore();
+
   const handleSubmit = (e) => {
     e.preventDefault()
     
@@ -20,8 +21,7 @@ function Cart () {
     .then(({
       id
     }) => setOrderId(id))
-  }
-  
+  }  
   
   const ordersCollection = collection(db, "orden");
   

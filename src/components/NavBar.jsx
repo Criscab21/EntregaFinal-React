@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import CartWidget from "./CartWidget";
 import { Link } from 'react-router-dom';
-import { ItemContext } from '../context/ItemProvider';
+import { ItemContext } from '../context/CartContext';
 import DropMenuCategory from './DropMenuCategory';
 
 

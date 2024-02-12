@@ -6,7 +6,7 @@ import {
     Box,
     Button
 } from '@chakra-ui/react';
-import { ItemContext } from "../context/ItemProvider";
+import { ItemContext } from "../context/CartContext";
 
 
 
